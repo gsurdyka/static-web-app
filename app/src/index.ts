@@ -17,7 +17,7 @@ async function testSubmitFuncHandler(e: Event): Promise<void>{
     e.preventDefault();
     const apiResponse = await fetch('/api/Example');
     const apiResponseText = await apiResponse.text();
-    const outputElement = document.querySelector('#output');
+    const outputElement = document.querySelector('#funcOutput');
     outputElement.textContent = apiResponseText;
 }
 
